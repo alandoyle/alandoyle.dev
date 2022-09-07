@@ -1,0 +1,3 @@
+[submodule "themes/cleite"]
+	path = themes/cleite
+	url = https://github.com/alandoyle/hugo-cleite-theme
