@@ -11,7 +11,7 @@ aliases: [/images/,/images/hardware/,/images/blog/]
 ---
 
 # Alan Doyle
-- ## Father
-- ## Software Developer
-- ## Amigan
-- ## Irishman
+## Father
+## Software Developer
+## Amigan
+## Irishman

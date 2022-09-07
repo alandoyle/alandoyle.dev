@@ -24,7 +24,7 @@ theme = "cleite"
     show = true
 
 [params.blog_rss] # Show the RSS feed in the menu bar
-    show = false
+    show = true
 
 [params.hero]
     textColor = "" # Empty for default color
