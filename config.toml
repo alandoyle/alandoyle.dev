@@ -57,7 +57,7 @@ theme = "cleite"
     showAuthor = true
     showDate = true
     showTags = true
-    dateFormat = ":date_long"
+    dateFormat = "Monday, Jan, 2006"
 
 [params.contact] # Contact info
     email = "me@alandoyle.com"
