@@ -6,7 +6,7 @@ date: "2022-09-07T23:14:12"
 publishDate: "2022-09-07T23:14:12"
 tags: ["markdown", "examples", "cheatsheet"]
 draft: false
-showToc: true
+showToc: false
 cover:
     image: "/images/blog/hugo-logo.png"
     alt: "featured image"

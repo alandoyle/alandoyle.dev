@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-description: ""
+description: "... the boring bit!"
 images: []
 draft: false
 menu: main
@@ -8,7 +8,7 @@ weight: 6
 cover:
     image: "/images/about_me.jpg"
     alt: "Alan Doyle"
-    relative: false
+    halfSize: true
 ---
 
 # Who am I?
