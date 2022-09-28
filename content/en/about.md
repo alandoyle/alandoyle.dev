@@ -15,7 +15,7 @@ cover:
 
 My name is Alan Doyle, no not this [Alan Doyle](https://alandoyle.ca). I'm a father to 2 beautiful daughters, I'm an Irish (Dublin born) Software Developer currently living in Birmingham, England.
 
-I’ve been a Software Engineer for over 25 years now, initially working on embedded systems but currently writing cross-platform software to run on AIX, Linux, Open Server and Windows from a single common codebase for the Motor Trade.
+I’ve been a Software Developer for over 25 years now, initially working on embedded systems but currently writing cross-platform software to run on AIX, Linux, Open Server and Windows from a single common codebase for the Motor Trade.
 
 My passion always was and always will be coding. I’ve been writing Software since I was 12 years old on the Commodore 64 my parents got me for Christmas, later I moved on to an Amiga 500 and Amiga 1200. However since I switched to PCs I’ve never been happy running Windows, I missed the passion Amiga coders had but now I’ve found that Open-Source software (particularly Linux) feeds that passion. 
 
