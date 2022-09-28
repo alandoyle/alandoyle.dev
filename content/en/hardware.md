@@ -17,7 +17,7 @@ I tend to change hardware a fair bit — with certain exceptions. Of late I’ve
 ---
 
 ## ASUS FX505DT-AL086T
-**Camaxtli/Nyx** – Main Development Machine ([Ubuntu 22.04 Desktop](https://www.ubuntu.com/desktop) / [Windows 11 Pro](https://www.microsoft.com/windows/features) [KVM])
+**Nyx/Camaxtli** – Main Development Machine ([Ubuntu 22.04 Desktop](https://www.ubuntu.com/desktop) / [Windows 11 Pro](https://www.microsoft.com/windows/features) [KVM])
 
 {{< figure src="/images/hardware/FX505DT-AL086T.jpg" alt="ASUS TUF FX505DT-AL086T" class="hardware-image" >}}
  
@@ -26,7 +26,7 @@ I tend to change hardware a fair bit — with certain exceptions. Of late I’ve
 - AMD® Vega 8 2Gb Integrated Graphics
 - NVIDIA GeForce GTX 1650 4GB Dedicated Graphics
 - 1TB Sabrent Rocket Q NVMe SSD
-- 2TB Crucial MX500 CT2000MX500SSD1(Z) SATA-III SSD
+- 2TB Crucial MX500 SATA-III SSD
 - 1x USB 2.0 ports, 1x left
 - 2x USB 3.1 ports, 2x left
 - 15.6” HD screen (1920×1080), 120Hz 16:9 widescreen
@@ -86,7 +86,7 @@ I tend to change hardware a fair bit — with certain exceptions. Of late I’ve
 ---
 
 ## Antec Fusion
-**Cronus/Elysium** – Steam Machine ([Ubuntu 22.04 Server](https://www.ubuntu.com/server) / [Windows 11 Pro](https://www.microsoft.com/windows/features) [KVM])
+**Baal/Elysium** – Steam Machine ([Ubuntu 22.04 Server](https://www.ubuntu.com/server) / [Windows 11 Pro](https://www.microsoft.com/windows/features) [KVM])
 
 {{< figure src="/images/hardware/Antec-Fusion.jpg" alt="Antec Fusion" class="hardware-image" >}}
 
@@ -155,7 +155,7 @@ I tend to change hardware a fair bit — with certain exceptions. Of late I’ve
 ---
 
 ## Kodlix Z83-F
-**Baal** – DNS Server ([Ubuntu 22.04 Server](https://www.ubuntu.com/server))
+**Yu** – Home Assistant ([Home Assistant OS 9.0](https://github.com/home-assistant/operating-system))
 
 {{< figure src="/images/hardware/Kodlix-Z83-F.jpg" alt="Kodlix Z83-F" class="hardware-image" >}}
 

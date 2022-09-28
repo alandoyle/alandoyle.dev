@@ -66,7 +66,7 @@ More details on each step are below.
 
 I run Ubuntu Linux, so installing Hugo was easy. I used 
 
-> sudo apt install hugo
+> sudo snap install hugo
 
 ## Find a Hugo theme
 
@@ -79,7 +79,7 @@ On WordPress, I was running a slightly modified version of the **Bold Headline**
 * Featured image
 * RSS
 
-I found the [Terrassa](https://github.com/daniarlert/hugo-terrassa-theme) theme on Github and it met most of my needs but as a developer I knew I could add the missing features. Unfortunately, Terrassa is now no longer maintained by it's developer so I have forked the theme and I'm currently maintaining my version of it called [cleite](https://github.com/alandoyle/hugo-cleite-theme).
+I found the [Terrassa](https://github.com/daniarlert/hugo-terrassa-theme) theme on Github and it met most of my needs but as a developer I knew I could add the missing features. Unfortunately, Terrassa is now no longer maintained by it's developer so I have forked the theme and I'm currently maintaining my version of it called [Cleite](https://github.com/alandoyle/hugo-cleite-theme).
 
 ## ~~Convert~~ Scrap WordPress content
 
@@ -142,9 +142,9 @@ Site updates are super simple. All I needed to do was update my local git reposi
 Publishing with Hugo has never been so simple.
 
 
-### Cloudflare Pages/Hugo caveat and fix
+# Cloudflare Pages/Hugo caveat and fix
 
-One thing I noticed was the post dates on my blog entries were incorrect. After several tweaks and check-in's to my git repository I found "[Hugo timezone format issue](https://community.cloudflare.com/t/hugo-timezone-format-issue/390678/12)" on the [Cloudflare Community forums](https://community.cloudflare.com). Setting **HUGO_VERSION** to **0.102.1** to match my local environment and setting **TZ** to **/usr/share/zoneinfo/Europe/London** fixed the timestamp issue on the next deployment. Looking back through the logs of previos deployments it looks like Cloudflare Pages version of Hugo defaults to **0.54.0** which was too old to support the Hugo features I was using!
+One thing I noticed was the post dates on my blog entries were incorrect. After several tweaks and check-in's to my git repository I found "[Hugo timezone format issue](https://community.cloudflare.com/t/hugo-timezone-format-issue/390678/12)" on the [Cloudflare Community forums](https://community.cloudflare.com). Setting **HUGO_VERSION** to **0.104.1** to match my local environment and setting **TZ** to **/usr/share/zoneinfo/Europe/London** fixed the timestamp issue on the next deployment. Looking back through the logs of previos deployments it looks like Cloudflare Pages version of Hugo defaults to **0.54.0** which was too old to support the Hugo features I was using!
 
 # Conclusion
 
