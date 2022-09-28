@@ -113,7 +113,7 @@ At this point Github prompted me to login and give Cloudflare Pages permission o
 
 Once I had picked my Git repository, I selected **Install & Authorize** and **Begin setup** button in the bottom right corner.
 
-Next under **Set up builds and deployments** a **Project name** was generated based on the Github repository name, this can be edited to suit, I did. Next I choose the **Production branch**, this is usually new Github repositories it's _main_ otherwise it's usually _master_.
+Next under **Set up builds and deployments** a **Project name** was generated based on the Github repository name, this can be edited to suit, I did. Next I choose the **Production branch**, this is usually new Github repositories it's _main_, otherwise it's usually _master_.
 
 Below these settings is the **Build settings** section where I chose **Hugo** from the **Framework preset** dropdown list. This should also fill in the **Build command**, with _hugo_, which is also editable in case you need to specify additional commandline parameters.
 
@@ -145,6 +145,8 @@ Publishing with Hugo has never been so simple.
 # Cloudflare Pages/Hugo caveat and fix
 
 One thing I noticed was the post dates on my blog entries were incorrect. After several tweaks and check-in's to my git repository I found "[Hugo timezone format issue](https://community.cloudflare.com/t/hugo-timezone-format-issue/390678/12)" on the [Cloudflare Community forums](https://community.cloudflare.com). Setting **HUGO_VERSION** to **0.104.1** to match my local environment and setting **TZ** to **/usr/share/zoneinfo/Europe/London** fixed the timestamp issue on the next deployment. Looking back through the logs of previos deployments it looks like Cloudflare Pages version of Hugo defaults to **0.54.0** which was too old to support the Hugo features I was using!
+
+![Cloudflare Pages Variables](/images/blog/cloudflare-pages-variables.jpg)
 
 # Conclusion
 
