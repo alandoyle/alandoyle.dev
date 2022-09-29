@@ -16,7 +16,7 @@ cover:
 
 # Introduction
 
-So in February 2020 I bought a [Teclast F5](/hardware/#teclast-f5) on Amazon to run Ubuntu on. It's a superlight 11.6" 2-in-1 laptop with a FullHD (1920x1080) touchscreen, 8Gb RAM and a 256Gb SSD coupled with an Intel Celeron N4100 1.1GHz (up to 2.4 GHz) Quad Core. It's perfect for carrying around, while being powerful enough to use for most of my mobile computing needs and running Ubuntu get's up to 4 hours from the original 29Wh which suits me fine. I did run Windows 10 and 11 on it too as well as ChromeOS via the [Brunch Framework](https://github.com/sebanc/brunch) and both ChromeOS and Windows worked well enough the laptop got quite hot, especially Windows, so I returned to Ubuntu and PowerTOP. I'll delve further into Ubuntu on the Teclast F5 in another post but for this post I'll concentrate on PowerTOP.
+So in February 2020 I bought a [Teclast F5](/hardware/#teclast-f5) on Amazon to run Ubuntu on. It's a superlight 11.6" 2-in-1 laptop with a FullHD (1920x1080) touchscreen, 8Gb RAM and a 256Gb SSD coupled with an Intel Celeron N4100 1.1GHz (up to 2.4 GHz) Quad Core. It's perfect for carrying around, while being powerful enough to use for most of my mobile computing needs and running Ubuntu get's up to 4 hours from the original 29Wh which suits me fine. I did run Windows 10 and 11 on it too as well as ChromeOS via the [Brunch Framework](https://github.com/sebanc/brunch) and although both ChromeOS and Windows worked well enough the laptop got quite hot, especially Windows, so I returned to Ubuntu and PowerTOP. I'll delve further into Ubuntu on the Teclast F5 in another post but for this post I'll concentrate on PowerTOP.
 
 # What is PowerTOP?
 
