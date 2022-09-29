@@ -51,7 +51,7 @@ Some recommend no swap (not usually advised) or swap size slightly larger than t
 By default an Ubuntu install will set up a small swap file /swap.img
 To check swap space run the following command from a terminal window...
 
-```no-highlight
+```bash
 swapon
 ```
 ```no-highlight
@@ -61,7 +61,7 @@ NAME      TYPE SIZE USED PRIO
 
 Alternatively run the following command from a terminal window...
 
-```no-highlight
+```bash
 free --mega
 ```
 ```no-highlight
@@ -80,7 +80,7 @@ Notice that even on this 16Gb system with more than 12Gb available some swap is 
 
 To add more swap space run the following set of commands...
 
-```no-highlight
+```bash
 sudo fallocate -l 2G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
@@ -92,13 +92,13 @@ no label, UUID=cba13513-5ba0-480a-a0f9-d3e22807dc1a
 
 To activate the swap run the following command...
 
-```no-highlight
+```bash
 sudo swapon /swapfile
 ```
 
 To check if it's enabled run the following command...
 
-```no-highlight
+```bash
 sudo swapon --show
 ```
 ```no-highlight
@@ -111,7 +111,7 @@ NAME      TYPE SIZE USED PRIO
 
 To enable the swap at the next boot run the following command...
 
-```no-highlight
+```bash
 echo "/swapfile none swap sw 0 0" | sudo tee -a /etc/fstab
 ```
 
@@ -137,7 +137,7 @@ For ZSwap to work it must be built into the Linux Kernel being run.
 
 To check if your OS Kernel comes with ZSwap by running the command below.
 
-```no-highlight
+```bash
 cat /boot/config-`uname -r` | grep -i zswap
 ```
 ```no-highlight
@@ -163,7 +163,7 @@ NOTE: Ubuntu Kernels have ZSwap configured, as do the [Xanmod Kernels](https://x
 
 To enable ZSwap on the next reboot run the following commands...
 
-```no-highlight
+```bash
 echo GRUB_CMDLINE_LINUX_DEFAULT="$GRUB_CMDLINE_LINUX_DEFAULT zswap.enabled=1 zswap.compressor=lz4" | sudo tee /etc/default/grub.d/enable-zswap.cfg
 update-grub2
 EOF
@@ -171,7 +171,7 @@ EOF
 
 To make things easier I've created a Zswap Configuration script which can be installed by running the following command...
 
-```no-highlight
+```bash
 sudo bash -c "$(curl -sSfL https://raw.githubusercontent.com/alandoyle/helper-scripts/main/installers/zswap-installer)"
 ```
 This will download and install the new configurable Zswap configuration for Ubuntu. Please feel free to read the full [zswap-installer source](https://github.com/alandoyle/helper-scripts/blob/main/installers/zswap-installer) to make sure you are happy with what the scripts is doing. 
@@ -182,7 +182,7 @@ Reboot to enable Zswap.
 
 To check if ZSwap has been enabled simply run the following command...
 
-```no-highlight
+```bash
 cat /sys/module/zswap/parameters/enabled
 ```
 
@@ -190,7 +190,7 @@ If ZSwap is enabled, you should see `Y` in return.
 
 Or if Zswap is enabled via my installation script simply run the following command for all the information required...
 
-```no-highlight
+```bash
 sudo zswap-stats
 ```
 ```no-highlight
@@ -222,7 +222,7 @@ Zswap Statistics
 If Zswap is installed via my installation script above then Zswap can be easily re-configured.
 Simply edit **/etc/default/zswap** as root
 
-```no-highlight
+```bash
 #
 # Zswap Configuration Options
 #
@@ -273,7 +273,7 @@ zRAM is a fantastic solution to trade some CPU horsepower to gain more RAM. It i
 
 zRAM is probably the simplest to set up on Ubuntu unlike Swap and ZSwap. Simply run the following command...
 
-```no-highlight
+```bash
 sudo apt install zram-config -y
 ```
 
@@ -285,7 +285,7 @@ NOTE: By default zRAM is set to use half the computer’s actual RAM. This does 
 
 Once installed zRAM can be easily checked using the following command...
 
-```no-highlight
+```bash
 zramctl 
 ```
 ```no-highlight
@@ -297,7 +297,7 @@ However, this method of enabling is very limited as it is not possible to config
 
 My updated zRAM Configuration script can be installed by running the following command...
 
-```no-highlight
+```bash
 sudo bash -c "$(curl -sSfL https://raw.githubusercontent.com/alandoyle/helper-scripts/main/installers/zram-installer)"
 ```
 This will download and install the new configurable zRAM configuration for Ubuntu. Please feel free to read the full [zram-installer source](https://github.com/alandoyle/helper-scripts/blob/main/installers/zram-installer) to make sure you are happy with what the scripts is doing. 
@@ -306,7 +306,7 @@ By default zRAM uses the `lz4` compression algorithm. This algorithm is fast but
 
 The supported compression algorithms can be seen using the following command...
 
-```no-highlight
+```bash
 cat /sys/block/zram0/comp_algorithm
 ```
 ```no-highlight
@@ -319,7 +319,7 @@ Configuration is simple
  
 As before, once installed zRAM can be easily checked using the following command...
 
-```no-highlight
+```bash
 zramctl 
 ```
 ```no-highlight
@@ -331,7 +331,7 @@ NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
 If zRAM is installed via my installation script above then zRAM can be easily re-configured.
 Simply edit **/etc/default/zram** as root
 
-```no-highlight
+```bash
 #
 # zRAM Configuration Options
 #
@@ -368,7 +368,7 @@ Swappiness is a Linux kernel property that defines how often the system will use
 
 On Ubuntu 22.04, the default swappiness value is set to **60**. You can check the current value by typing the following command...
 
-```no-highlight
+```bash
 cat /proc/sys/vm/swappiness
 ```
 ```no-highlight
@@ -379,13 +379,13 @@ While the swappiness value of **60** is OK for most Linux desktop systems, for p
 
 For example, to set the swappiness value to **10**, run:
 
-```no-highlight
+```bash
 sudo sysctl vm.swappiness=10
 ```
 
 To make this parameter persistent across reboots, append the following line to the **/etc/sysctl.d/99-swappiness.conf** file:
 
-```no-highlight
+```bash
 echo vm.swappiness=10 | sudo tee /etc/sysctl.d/99-swappiness.conf
 ```
 

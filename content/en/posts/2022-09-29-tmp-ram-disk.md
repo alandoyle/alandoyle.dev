@@ -41,7 +41,7 @@ On Ubuntu 22.04 :
 
 To check if /tmp RAM disk is already enabled simply run the following command...
 
-```no-highlight
+```bash
 sudo systemctl is-enabled tmp.mount
 ```
 
@@ -49,7 +49,7 @@ sudo systemctl is-enabled tmp.mount
 
 To enable the /tmp RAM disk we need to enable the Systemd service
 
-```no-highlight
+```bash
 sudo cp /usr/share/systemd/tmp.mount /etc/systemd/system/
 sudo systemctl enable tmp.mount
 ```
@@ -58,7 +58,7 @@ sudo systemctl enable tmp.mount
 
 To disable the /tmp RAM disk simply run the following command...
 
-```no-highlight
+```bash
 sudo systemctl disable tmp.mount
 ```
 
