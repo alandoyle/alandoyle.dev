@@ -67,8 +67,8 @@ For example on my Teclast F5 my _/etc/powersaver.d/custom-rules.conf_ looks like
 # Disable audio powersaving to stop loud "popping" noise coming out of speakers
 # when the audio hardware goes in and out of sleep.
 #
-echo N > /sys/modules/snd_hda_intel/parameters/power_save
-echo 0 > /sys/modules/snd_hda_intel/parameters/power_save_controller
+echo 0 > /sys/module/snd_hda_intel/parameters/power_save
+echo N > /sys/module/snd_hda_intel/parameters/power_save_controller
 
 ################################################################################
 #
