@@ -98,6 +98,19 @@ if [ ! -f /etc/modprobe.d/i915-powersave.conf ] ; then
 options i915 enable_fbc=1 enable_guc=0
 EOF
 fi
+
+################################################################################
+# Disable sound card powersaving
+#
+if [ ! -f /etc/modprobe.d/audio_disable_powersave.conf ] ; then
+    cat << EOF | sudo tee /etc/modprobe.d/audio_disable_powersave.conf
+#
+# Disable audio powersaving
+#
+options snd_hda_intel power_save=0 power_save_controller=N
+EOF
+fi
+
 ```
 
 # Conclusion
