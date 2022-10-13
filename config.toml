@@ -68,6 +68,7 @@ theme = "cleite"
 [params.social]
     twitter = "https://twitter.com/_AlanDoyle_"
     facebook = "https://facebook.com/alan.d.doyle"
+    docker = "https://hub.docker.com/u/alandoyle"
     github = "https://github.com/alandoyle"
     gitlab = ""
     codepen = ""
