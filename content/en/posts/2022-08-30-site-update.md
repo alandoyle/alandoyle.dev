@@ -66,7 +66,7 @@ More details on each step are below.
 
 I run Ubuntu Linux, so installing Hugo was easy. I used 
 
-> sudo snap install hugo
+> sudo snap install hugo -y
 
 ## Find a Hugo theme
 

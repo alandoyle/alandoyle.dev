@@ -28,6 +28,14 @@ That sums it up quite nicely.
 
 Nowadays the Linux kernel is much better at power saving but I found in some scenarios, particularly Intel-based laptops, PowerTOP can help lower power consumption and heat. For example, on the Teclast F5 I found that enabling "SATA link power management" in PowerTOP had a very profound and positive effect on the temperature of the 256Gb M.2 SSD installed. It went from being a burning hotspot on the bottom of the laptop to being the same temperature as the rest of the all-metal aluminum chassis. Even under Windows, were unfortunately powersaving and ACPI handling can be better, it was burning hot so very pleased with the outcome. An added bonus is that enabling it incurs almost no noticeable drawbacks (no performance impact, no latency) but it will save you 0.5W to 1W and a _lot_ of heat!
 
+# Installation
+
+Installation on Ubuntu is incredibly simple. Run the following command...
+
+> sudo apt install powertop -y
+
+PowerTOP will now be installed ready to configure and run at startup.
+
 # Enabling PowerTOP on boot
 
 To enable PowerTOP powersaving on boot we simply need to create a simple systemd service file and enable it. Run the following commands to enable PowerTOP on boot...
