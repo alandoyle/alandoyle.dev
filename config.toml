@@ -40,7 +40,7 @@ theme = "cleite"
 
 [params.form] # Contact form
     netlify = false
-    action = "https://formspree.io/f/xjvzkzao"
+    action = "https://public.herotofu.com/v1/0d7fd2b0-70d1-11ed-a377-655c67143cec"
     method = "POST"
     inputNameName = "name"
     inputNameLabel = "Name"

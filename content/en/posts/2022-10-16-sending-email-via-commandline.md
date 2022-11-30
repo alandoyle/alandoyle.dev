@@ -11,7 +11,7 @@ tags: ["ubuntu","tips","email"]
 ShowToc: true
 cover:
     image: "/images/blog/justin-morgan-D2TZ-ashGzc-unsplash-cropped.jpg"
-    alt: "Image Description"
+    alt: "Gmail"
     relative: false
 ---
 
